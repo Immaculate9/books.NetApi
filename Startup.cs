@@ -28,7 +28,7 @@ namespace bookcrud
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<BookContext>(option => option.UseSqlServer(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BookDb;"));
+            services.AddDbContext<BookContext>(option => option.UseSqlServer(@"Data Source=VGG-LT-228\DBSERVER2017; User Id=sa; Password=admin@123;Initial Catalog=BookDb;"));
             services.AddCors();
         }
 

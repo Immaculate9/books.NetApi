@@ -10,7 +10,8 @@ namespace bookcrud.Models
     {
         public int Id { get; set; }
         [Required]
-        [StringLength(20)]
+        [StringLength(40, ErrorMessage = "Your title cannot contain more than 20 characters")
+ ]
         public string Title { get; set; }
         [Required]
         
